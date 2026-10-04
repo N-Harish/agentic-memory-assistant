@@ -1,0 +1,31 @@
+[project]
+name = "agentic-memory"
+version = "0.1.0"
+description = "Agentic Memory App"
+readme = "README.md"
+authors = [
+    { name = "N-Harish", email = "harishnatarajan24@gmail.com" }
+]
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "transformers==5.5.0",
+    "torch==2.12.1",
+    "anyjev>=0.0.2",
+    "langchain>=1.4.2",
+    "langgraph>=1.2.12",
+    "langchain-ollama>=1.1.0",
+    "mem0ai>=2.2.0",
+    "python-dotenv>=1.2.3",
+    "accelerate>=1.15.0",
+    "sentence-transformers>=6.1.0",
+    "gliner2>=2.0.0",
+    "streamlit>=1.65.0",
+]
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu126" }
+
+[[tool.uv.index]]
+name = "pytorch-cu126"
+url = "https://download.pytorch.org/whl/cu126"
+explicit = true
