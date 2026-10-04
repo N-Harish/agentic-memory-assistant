@@ -174,10 +174,11 @@ Tunable constants are at the top of `app.py`:
 ├── uv.lock
 ├── Dockerfile
 ├── .dockerignore
-├── .env                # Your API keys (not committed)
+├── .env.example        # Template for the required API keys
+├── .env                # Your real API keys (not committed)
 └── img/
     ├── core_components_flow.png
-    └── streamlit_screenshot.jpg
+    └── agentic_mem_streamlit.jpg
 ```
 
 ## Design notes
